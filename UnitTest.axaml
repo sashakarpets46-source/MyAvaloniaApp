@@ -1,0 +1,83 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="MyAvaloniaApp.UnitTest"
+        Title="Unit Tests"
+        Width="700"
+        Height="600">
+
+    <TabControl Margin="20">
+
+        <TabItem Header="Завдання 1">
+            <StackPanel Margin="30" Spacing="15">
+
+                <TextBlock Text="a:" FontSize="18"/>
+                <TextBox Name="TextA1" Width="200"/>
+
+                <TextBlock Text="b:" FontSize="18"/>
+                <TextBox Name="TextB1" Width="200"/>
+
+                <TextBlock Text="c:" FontSize="18"/>
+                <TextBox Name="TextC1" Width="200"/>
+
+                <Button Content="Розрахувати"
+                        Width="200"
+                        Click="CalculateTask1"/>
+
+                <TextBlock Name="Result1"
+                           Text="Результат"
+                           FontSize="24"/>
+
+            </StackPanel>
+        </TabItem>
+
+
+        <TabItem Header="Завдання 2">
+            <StackPanel Margin="30" Spacing="15">
+
+                <TextBlock Text="a:" FontSize="18"/>
+                <TextBox Name="TextA2" Width="200"/>
+
+                <TextBlock Text="b:" FontSize="18"/>
+                <TextBox Name="TextB2" Width="200"/>
+
+                <Button Content="Розрахувати"
+                        Width="200"
+                        Click="CalculateTask2"/>
+
+                <TextBlock Name="Result2"
+                           Text="Результат"
+                           FontSize="24"/>
+
+            </StackPanel>
+        </TabItem>
+
+
+        <TabItem Header="Завдання 3">
+            <StackPanel Margin="30" Spacing="15">
+
+                <TextBlock Text="Сторона основи a:"
+                           FontSize="18"/>
+
+                <TextBox Name="TextA3"
+                         Width="200"/>
+
+                <TextBlock Text="Висота h:"
+                           FontSize="18"/>
+
+                <TextBox Name="TextH3"
+                         Width="200"/>
+
+                <Button Content="Розрахувати"
+                        Width="200"
+                        Click="CalculateTask3"/>
+
+                <TextBlock Name="Result3"
+                           Text="Результат"
+                           FontSize="20"/>
+
+            </StackPanel>
+        </TabItem>
+
+    </TabControl>
+
+</Window>
